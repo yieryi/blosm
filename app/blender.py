@@ -713,9 +713,11 @@ class BlenderApp(BaseApp):
         if bpyproj:
             projection = bpyproj.getProjection(lat, lon)
         if not projection:
-            from util.transverse_mercator import TransverseMercator
+            # from util.transverse_mercator import TransverseMercator
+            from util.web_mercator import WebMercator
             # fall back to the Transverse Mercator
-            projection = TransverseMercator(lat=lat, lon=lon)
+            # projection = TransverseMercator(lat=lat, lon=lon)
+            projection = WebMercator(lat=lat, lon=lon)
         self.projection = projection
     
     def setMinAssetsVersion(self, strVersion):

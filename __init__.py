@@ -56,6 +56,7 @@ _checkPath()
 import bpy, bmesh, bgl, blf
 
 from util.transverse_mercator import TransverseMercator
+from util.web_mercator import WebMercator
 from renderer import Renderer
 from parse.osm import Osm
 import gui, ape
