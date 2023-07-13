@@ -18,7 +18,7 @@ def getArcgisAccessToken(addonName):
 
 class Arcgis(Overlay):
     
-    baseUrl = "https://ibasemaps-api.arcgis.com/arcgis/rest/services/%s/MapServer/tile/{z}/{y}/{x}?token=%s"
+    baseUrl = "https://services.arcgisonline.com/ArcGIS/rest/services/%s/MapServer/tile/{z}/{y}/{x}?token=%s"
     
     def __init__(self, mapId, maxZoom, addonName):
         super().__init__(

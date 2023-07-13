@@ -398,6 +398,8 @@ from .arcgis import Arcgis
 overlayTypeData = {
     'mapbox-satellite': (Mapbox, "mapbox.satellite", 19),
     'arcgis-satellite': (Arcgis, "World_Imagery", 19),
+    'arcgis-topo': (Arcgis, "World_Topo_Map", 19),
+    'arcgis-street': (Arcgis, "World_Street_Map", 19),
     'osm-mapnik': (Overlay, "http://[a,b,c].tile.openstreetmap.org", 19),
     'mapbox-streets': (Overlay, "mapbox://styles/mapbox/streets-v11", 19),
     'custom': (Overlay, '', 19)

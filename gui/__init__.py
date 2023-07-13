@@ -865,6 +865,8 @@ class BlosmProperties(bpy.types.PropertyGroup):
         items = (
             #("bing-aerial", "Bing Aerial", "Bing Aerial"),
             ("arcgis-satellite", "ArcGIS Satellite", "ArcGIS Satellite"),
+            ("arcgis-street", "ArcGIS Street", "ArcGIS Street"),
+            ("arcgis-topo", "ArcGIS Topo", "ArcGIS Topo"),
             ("mapbox-satellite", "Mapbox Satellite", "Mapbox Satellite"),
             ("osm-mapnik", "OSM Mapnik", "OpenStreetMap Mapnik"),
             ("mapbox-streets", "Mapbox Streets", "Mapbox Streets"),
